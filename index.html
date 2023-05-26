@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Restaurant Web Site</title>
+            <link rel="stylesheet" href="style.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+            <header class="header">
+                        <a class="logo" href="index.html" alt=""><img src="./images/logo.png" alt=""></a>
+                        <nav class="navbar active">
+                                    <a href="#home" class="active">Anasayfa</a>
+                                    <a href="#menu">Menü</a>
+                                    <a href="#ürün">Ürünler</a>
+                                    <a href="#ürünBilgi">Ürün Bilgisi</a>
+                                    <a href="#yorum">Yorumlar</a>
+                                    <a href="#blog">Blog</a>
+                                    <a href="#iletisim">İletişim</a>
+                        </nav>
+                        <div class="buttons">
+                                    <button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                                    <button id="cart-btn"><i class="fa-solid fa-cart-shopping"></i></button>
+                                    <button id="menu-btn"><i class="fa-solid fa-bars"></i></button>
+                        </div>
+
+                        <div class="search-form">
+                          <input type="text" class="search-input" id="search-box" placeholder="Arama">
+                          <i class="fas fa-search"></i>
+                        </div>
+
+                        <div class="cart-items-container">
+                          <div class="cart-item">
+                            <i class="fas fa-times"></i>
+                            <img src="./images/menu-1.png" alt="menu">
+                            <div class="content">
+                              <h3>Sucuklu Pizza</h3>
+                              <div class="price">₺59.99/-</div>
+                            </div>
+
+                            <div class="quantity">
+                              <i class="fas fa-minus"></i>
+                              <span>1</span>
+                              <i class="fas fa-plus"></i>
+                            </div>
+                          </div>
+
+                          <div class="cart-item">
+                            <i class="fas fa-times"></i>
+                            <img src="./images/menu-2.png" alt="menu">
+                            <div class="content">
+                              <h3>Burger</h3>
+                              <div class="price">₺49.99/-</div>
+                            </div>
+
+                            <div class="quantity">
+                              <i class="fas fa-minus"></i>
+                              <span>2</span>
+                              <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
+
+                        <div class="cart-item">
+                            <i class="fas fa-times"></i>
+                            <img src="./images/menu-3.png" alt="menu">
+                            <div class="content">
+                              <h3>Tavuklu Pizza</h3>
+                              <div class="price">₺78.99/-</div>
+                            </div>
+
+                            <div class="quantity">
+                              <i class="fas fa-minus"></i>
+                              <span>1</span>
+                              <i class="fas fa-plus"></i>
+                            </div>
+                        </div> 
+
+                        <div class="cart-item">
+                            <i class="fas fa-times"></i>
+                            <img src="./images/menu-4.png" alt="menu">
+                            <div class="content">
+                              <h3>Kral Burger</h3>
+                              <div class="price">₺99.99/-</div>
+                            </div>
+
+                            <div class="quantity">
+                              <i class="fas fa-minus"></i>
+                              <span>3</span>
+                              <i class="fas fa-plus"></i>
+                            </div>
+                          </div>
+
+                          <a href="#" class="btn">Siparişi Tamamla</a>
+                        </div>
+
+            </header>
+
+            <section class="home" id="home">
+                      <div class="content">
+                        <i><h3>Nefis yemekler İçin tamda yerine geldiniz</h3></i>
+                        <p>Yüzlerce restoran, çeşit çeşit yemek, bol bol indirim ve dilediğin gibi ödeme fırsatı. Burger, pizza, lahmacun. Acıktığın anda çeşit çeşit yemek, Yemeksepeti’yle kapında. Joker İndirimleri. Seçilmiş Menü Fırsatları. Canlı Müşteri Hizmeti. İndirimli Menüler.</p>
+
+                        <a href="#" class="btn">Sipariş ver</a>
+                      </div>
+            </section>
+
+            <section class="menu" id="menu">
+                        <h1>-Menü-</h1>
+                        <div class="box-container">
+                                    <div class="box">
+                                                <div class="box-head">
+                                                            <img src="./images/menu-1.png" alt="menu">
+                                                            <span class="menu-category">Sucuklu Pizza</span>
+                                                            <h3>Küçük Boy Pizza</h3>
+                                                            <div class="price">₺59.99 <span>₺69.99</span></div>
+                                                </div>
+                                                <div class="yemek-info">
+                                                            <p>Sucuk, salam, mantar, mısır, zeytin, kapya biber, jalapeno biberi, 
+                                                              çarliston biber ve mozzarella peyniri</p>
+                                                </div>
+                                                <div class="box-bottom">
+                                                            <a href="#" class="btn">Sepete Ekle</a>
+                                                </div>
+                                    </div>
+
+                                    <div class="box">
+                                                <div class="box-head">
+                                                            <img src="./images/menu-2.png" alt="menu">
+                                                            <span class="menu-category">Burger</span>
+                                                            <h3>1 adet Burger</h3>
+                                                            <div class="price">₺49.99 <span>₺59.99</span></div>
+                                                </div>
+                                                <div class="yemek-info">
+                                                  <p>Ev yapımı hamburger ekmeği, ev yapımı (70 g) (2 adet) hamburger köftesi, 
+                                                    özel sos, double cheddar peyniri,
+                                                     dana jambon, eritilmiş kaşar peyniri ve patates kızartması ile</p>
+                                                </div>
+                                                <div class="box-bottom">
+                                                            <a href="#" class="btn">Sepete Ekle</a>
+                                                </div>
+                                    </div>
+
+                                    <div class="box">
+                                                <div class="box-head">
+                                                            <img src="./images/menu-3.png" alt="menu">
+                                                            <span class="menu-category">Tavuklu Pizza</span>
+                                                            <h3>Küçük Boy Pizza</h3>
+                                                            <div class="price">₺78.99 <span>₺89.99</span></div>
+                                                </div>
+                                                <div class="yemek-info">
+                                                            <p>Sucuk, salam, mantar, mısır, zeytin, kapya biber, jalapeno biberi, 
+                                                              çarliston biber ve mozzarella peyniri</p>
+                                                </div>
+                                                <div class="box-bottom">
+                                                            <a href="#" class="btn">Sepete Ekle</a>
+                                                </div>
+                                    </div>
+
+                                    <div class="box">
+                                                <div class="box-head">
+                                                            <img src="./images/menu-4.png" alt="menu">
+                                                            <span class="menu-category">Kral Burger</span>
+                                                            <h3>1 Adet Kral Burger</h3>
+                                                            <div class="price">₺79.99 <span>₺99.99</span></div>
+                                                </div>
+                                                <div class="yemek-info">
+                                                            <p>Ev yapımı hamburger ekmeği, ev yapımı (90 g) (3 adet) hamburger köftesi, 
+                                                              özel sos, double cheddar peyniri,
+                                                               dana jambon, eritilmiş kaşar peyniri ve patates kızartması ile</p>
+                                                </div>
+                                                <div class="box-bottom">
+                                                            <a href="#" class="btn">Sepete Ekle</a>
+                                                </div>
+                                    </div>
+
+                                    <div class="box">
+                                                <div class="box-head">
+                                                            <img src="./images/menu-1.png" alt="menu">
+                                                            <span class="menu-category">Sucuklu Pizza</span>
+                                                            <h3>Orta Boy Pizza</h3>
+                                                            <div class="price">₺69.99 <span>₺89.99</span></div>
+                                                </div>
+                                                <div class="yemek-info">
+                                                  <p>Sucuk, salam, mantar, mısır, zeytin, kapya biber, jalapeno biberi, 
+                                                    çarliston biber ve mozzarella peyniri</p>
+                                                </div>
+                                                <div class="box-bottom">
+                                                            <a href="#" class="btn">Sepete Ekle</a>
+                                                </div>
+                                    </div>
+
+                                    <div class="box">
+                                                <div class="box-head">
+                                                            <img src="./images/menu-2.png" alt="menu">
+                                                            <span class="menu-category">Burger</span>
+                                                            <h3>2 Adet Burger</h3>
+                                                            <div class="price">₺69.99 <span>₺79.99</span></div>
+                                                </div>
+                                                <div class="yemek-info">
+                                                  <p>Ev yapımı hamburger ekmeği, ev yapımı (70 g) (2 adet) hamburger köftesi, 
+                                                    özel sos, double cheddar peyniri,
+                                                     dana jambon, eritilmiş kaşar peyniri ve patates kızartması ile</p>
+                                                </div>
+                                                <div class="box-bottom">
+                                                            <a href="#" class="btn">Sepete Ekle</a>
+                                                </div>
+                                    </div>
+
+                                    <div class="box">
+                                                <div class="box-head">
+                                                            <img src="./images/menu-3.png" alt="menu">
+                                                            <span class="menu-category">Tavuklu Pizza</span>
+                                                            <h3>Orta Boy Pizza</h3>
+                                                            <div class="price">₺89.99 <span>₺99.99</span></div>
+                                                </div>
+                                                <div class="yemek-info">
+                                                  <p>Sucuk, salam, mantar, mısır, zeytin, kapya biber, jalapeno biberi, 
+                                                    çarliston biber ve mozzarella peyniri</p>
+                                                </div>
+                                                <div class="box-bottom">
+                                                            <a href="#" class="btn">Sepete Ekle</a>
+                                                </div>
+                                    </div>
+
+                                    <div class="box">
+                                                <div class="box-head">
+                                                            <img src="./images/menu-4.png" alt="menu">
+                                                            <span class="menu-category">Kral Burger</span>
+                                                            <h3>2 Adet Kral Burger</h3>
+                                                            <div class="price">₺89.99 <span>₺99.99</span></div>
+                                                </div>
+                                                <div class="yemek-info">
+                                                  <p>Ev yapımı hamburger ekmeği, ev yapımı (90 g) (3 adet) hamburger köftesi, 
+                                                    özel sos, double cheddar peyniri,
+                                                     dana jambon, eritilmiş kaşar peyniri ve patates kızartması ile</p>
+                                                </div>
+                                                <div class="box-bottom">
+                                                            <a href="#" class="btn">Sepete Ekle</a>
+                                                </div>
+                                    </div>
+
+                                    <div class="box">
+                                                <div class="box-head">
+                                                            <img src="./images/menu-1.png" alt="menu">
+                                                            <span class="menu-category">Sucuklu Pizza</span>
+                                                            <h3>Büyük Boy Pizza</h3>
+                                                            <div class="price">₺109.99 <span>₺129.99</span></div>
+                                                </div>
+                                                <div class="yemek-info">
+                                                  <p>Sucuk, salam, mantar, mısır, zeytin, kapya biber, jalapeno biberi, 
+                                                    çarliston biber ve mozzarella peyniri</p>
+                                                </div>
+                                                <div class="box-bottom">
+                                                            <a href="#" class="btn">Sepete Ekle</a>
+                                                </div>
+                                    </div>
+
+                                    <div class="box">
+                                                <div class="box-head">
+                                                            <img src="./images/menu-2.png" alt="menu">
+                                                            <span class="menu-category">Burger</span>
+                                                            <h3>3 Adet Burger</h3>
+                                                            <div class="price">₺89.99<span>₺99.99</span></div>
+                                                </div>
+                                                <div class="yemek-info">
+                                                  <p>Ev yapımı hamburger ekmeği, ev yapımı (70 g) (2 adet) hamburger köftesi, 
+                                                    özel sos, double cheddar peyniri,
+                                                     dana jambon, eritilmiş kaşar peyniri ve patates kızartması ile</p>
+                                                </div>
+                                                <div class="box-bottom">
+                                                            <a href="#" class="btn">Sepete Ekle</a>
+                                                </div>
+                                    </div>
+
+                                    <div class="box">
+                                                <div class="box-head">
+                                                            <img src="./images/menu-3.png" alt="menu">
+                                                            <span class="menu-category">Tavuklu Pizza</span>
+                                                            <h3>Büyük Boy Pizza</h3>
+                                                            <div class="price">₺119.99<span>₺129.99</span></div>
+                                                </div>
+                                                <div class="yemek-info">
+                                                  <p>Sucuk, salam, mantar, mısır, zeytin, kapya biber, jalapeno biberi, 
+                                                    çarliston biber ve mozzarella peyniri</p>
+                                                </div>
+                                                <div class="box-bottom">
+                                                            <a href="#" class="btn">Sepete Ekle</a>
+                                                </div>
+                                    </div>
+
+                                    <div class="box">
+                                                <div class="box-head">
+                                                            <img src="./images/menu-4.png" alt="menu">
+                                                            <span class="menu-category">Kral Burger</span>
+                                                            <h3>3 Adet Kral Burger</h3>
+                                                            <div class="price">₺129.99 <span>₺149.99</span></div>
+                                                </div>
+                                                <div class="yemek-info">
+                                                  <p>Ev yapımı hamburger ekmeği, ev yapımı (70 g) (2 adet) hamburger köftesi, 
+                                                    özel sos, double cheddar peyniri,
+                                                     dana jambon, eritilmiş kaşar peyniri ve patates kızartması ile</p>
+                                                </div>
+                                                <div class="box-bottom">
+                                                            <a href="#" class="btn">Sepete Ekle</a>
+                                                </div>
+                                    </div>
+                                   
+                        </div>
+            </section>
+
+            <section class="products" id="ürün">
+              <h1 class="heading">-Ek Ürünlerimiz-</h1>
+              <div class="box-container">
+                <div class="box">
+                  <div class="box-head">
+                    <span class="title">Mini Burger</span>
+                    <a href="#" class="name">Bacon Burger</a>
+                  </div>
+                  <div class="image">
+                    <img src="./images/product-1.png" alt="">
+                  </div>
+                  <div class="box-bottom">
+                    <div class="info">
+                      <b class="price">₺10.00</b>
+                      <span class="amount">110gr/330cal</span>
+                    </div>
+                    <div class="product-btn">
+                      <a href="#"><i class="fas fa-plus"></i></a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="box">
+                  <div class="box-head">
+                    <span class="title">Mini Burger</span>
+                    <a href="#" class="name">Bacon Burger</a>
+                  </div>
+                  <div class="image">
+                    <img src="./images/product-2.png" alt="">
+                  </div>
+                  <div class="box-bottom">
+                    <div class="info">
+                      <b class="price">₺20.00</b>
+                      <span class="amount">110gr/330cal</span>
+                    </div>
+                    <div class="product-btn">
+                      <a href="#"><i class="fas fa-plus"></i></a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="box dark-bg">
+                  <div class="box-head">
+                    <span class="title">Mini Burger</span>
+                    <a href="#" class="name">Bacon Burger</a>
+                  </div>
+                  <div class="image">
+                    <img src="./images/dark-product.jpg" alt="">
+                  </div>
+                  <div class="box-bottom">
+                    <div class="info">
+                      <b class="price">₺40.00</b>
+                      <span class="amount">110gr/330cal</span>
+                    </div>
+                    <div class="product-btn">
+                      <a href="#"><i class="fas fa-plus"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="about" id="ürünBilgi">
+              <h1 class="heading">-Ürün Bilgisi-</h1>
+              <div class="row">
+                <div class="image">
+                  <img src="./images/about.jpg" alt="">
+                </div>
+                <div class="content">
+                  <h3>Hamburger Menü</h3>
+                  <p>Hamburger veya sadece Burger, iki dilim yuvarlak sandviç 
+                    ekmeği arasına yerleştirilen bir köfte, Amerikan peyniri, marul
+                     yapılan sandviç türü. Genellikle ketçap, mayonez, turşu, 
+                    soğan, domates, hardal ve bunun gibi değişik malzemelerin de 
+                    ilavesi ile servis edilir.</p>
+                  <a href="#" class="btn">Daha Fazla</a>
+                </div>
+              </div>
+            </section>
+
+            <section class="review" id="yorum">
+              <h1 class="heading">-Yorumlar-</h1>
+              <div class="box-container">
+                <div class="box">
+                  <img src="./images/quote.png" alt="">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Quisquam, voluptatum. Quisquam, voluptatum. Quisquam, voluptatum.</p>
+                    <img src="./images/avatar-1.png" class="user">
+                    <span class="name">Fatma Özgür</span>
+                    <div class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half"></i>
+                    </div>
+                </div>
+
+                <div class="box">
+                  <img src="./images/quote.png" alt="">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Quisquam, voluptatum. Quisquam, voluptatum. Quisquam, voluptatum.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Quisquam, voluptatum. Quisquam, voluptatum. Quisquam, voluptatum.</p>
+                    <img src="./images/avatar-2.png" class="user">
+                    <span class="name">Mehmet Özdemir</span>
+                    <div class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half"></i>
+                    </div>
+                </div>
+
+                <div class="box">
+                  <img src="./images/quote.png" alt="">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Quisquam, voluptatum. Quisquam, voluptatum. Quisquam, voluptatum.</p>
+                    <img src="./images/avatar-3.png" class="user">
+                    <span class="name">Ayşe Mor</span>
+                    <div class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half"></i>
+                    </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="blog" id="blog">
+              <h1>-Blog-</h1>
+              <div class="box-container">
+                <div class="box">
+                  <div class="image">
+                    <img src="./images/blog-1.jpg" alt="">
+                  </div>
+                  <div class="content">
+                    <a href="#" class="title">Burger Nasıl Yapılır?</a>
+                    <span>25 Ekim 2021 By Admin</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                      Quisquam, voluptatum. Quisquam, voluptatum. Quisquam, voluptatum.</p>
+                    <a href="#" class="btn">Daha Fazla Oku</a>
+                  </div>
+                </div>
+
+                <div class="box">
+                  <div class="image">
+                    <img src="./images/blog-2.jpg" alt="">
+                  </div>
+                  <div class="content">
+                    <a href="#" class="title">Burger Nasıl Yapılır?</a>
+                    <span>25 Ekim 2021 By Admin</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                      Quisquam, voluptatum. Quisquam, voluptatum. Quisquam, voluptatum.</p>
+                    <a href="#" class="btn">Daha Fazla Oku</a>
+                  </div>
+                </div>
+
+                <div class="box">
+                  <div class="image">
+                    <img src="./images/blog-3.jpg" alt="">
+                  </div>
+                  <div class="content">
+                    <a href="#" class="title">Burger Nasıl Yapılır?</a>
+                    <span>25 Ekim 2021 By Admin</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                      Quisquam, voluptatum. Quisquam, voluptatum. Quisquam, voluptatum.</p>
+                    <a href="#" class="btn">Daha Fazla Oku</a>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="contact" id="iletisim">
+              <h1>-İletişim-</h1>
+              <div class="row">
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12
+                043.031382329518!2d28.765042263463542!3d41.008673083868366!2m3!1f0!2f0
+                !3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa3891b5c9713%3A0xb7f971
+                7f39912ffe!2zS8O8w6fDvGvDp2VrbWVjZSwgS2FuYXJ5YSwgMzQyOTAgS8O8w6fDvGvDp2
+                VrbWVjZS_EsHN0YW5idWw!5e0!3m2!1str!2str!4v1685009474459!5m2!1str!2str" 
+                loading="lazy" ></iframe>
+                <form>
+                  <h3>Bizimle İletişime geçin</h3>
+                  <div class="inputBox">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="Ad Soyad">
+                  </div>
+                  <div class="inputBox">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" placeholder="E-posta">
+                  </div>
+                  <div class="inputBox">
+                    <i class="fas fa-phone"></i>
+                    <input type="number" placeholder="Telefon">
+                  </div>
+                  <div class="inputBox">
+                    <textarea placeholder="Mesajınız"></textarea>
+                  </div>
+                  <input class="btn" type="submit" value="Gönder">
+                </form>
+              </div>
+             
+            </section>
+
+            <section class="footer">
+              <div class="box-container">
+
+                <div class="search">
+                  <input type="text" class="search-input" placeholder="Arama">
+                  <button class="btn bnt-primary">Ara</button>
+                </div>
+
+                <div class="box">
+                  <h3>Restoran</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Quisquam, voluptatum. Quisquam, voluptatum. Quisquam, voluptatum.</p>
+                </div>
+
+                <div class="box">
+                  <h3>Çalışma Saatleri</h3>
+                  <p>Pazartesi - Cuma: 9:00 - 22:00</p>
+                  <p>Cumartesi: 10:00 - 22:00</p>
+                  <p>Pazar: 10:00 - 20:00</p>
+                </div>
+
+                <div class="box">
+                  <h3>İletişim</h3>
+                  <p><i class="fas fa-map-marker-alt"></i>  İstanbul / Türkiye</p>
+                  <p><i class="fas fa-envelope"></i>  muhammetozdemir072@gmail.com</p>
+                  <p><i class="fas fa-phone"></i>  0442 875 3533</p>
+                </div>
+              </div>
+
+              <div class="share">
+                <a href="https://tr-tr.facebook.com/" class="fab fa-facebook"></a>
+                <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoidHIifQ%3D%3D%22%7D" class="fab fa-twitter"></a>
+                <a href="https://www.instagram.com/" class="fab fa-instagram"></a>
+                <a href="https://www.linkedin.com/in/muhammedemin0zdemir/" class="fab fa-linkedin"></a>
+                <a href="https://tr.pinterest.com/" class="fab fa-pinterest"></a>
+              </div>
+
+               <div class="links">
+                  <a href="#" class="active">Anasayfa</a>
+                  <a href="#">Menü</a>
+                  <a href="#">Ürünler</a>
+                  <a href="#">Ürün Bilgisi</a>
+                  <a href="#">Yorumlar</a>
+                  <a href="#">Blog</a>
+                  <a href="#">İletişim</a>
+                </div>
+             
+              <div class="credit">
+                  <span>© 2023 Tüm Hakları Saklıdır | Muhammed Emin Özdemir</span>
+              </div>
+              
+            </section>
+
+            <script src="script.js"></script>
+</body>
+</html>
